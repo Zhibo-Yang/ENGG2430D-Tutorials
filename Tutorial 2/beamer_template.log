@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.9)  20 JAN 2015 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.9)  20 JAN 2015 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1048,17 +1048,17 @@ Overfull \hbox (127.68054pt too wide) has occurred while \output is active
 [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 76.
+line 77.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1155,10 +1155,6 @@ Overfull \hbox (127.68054pt too wide) has occurred while \output is active
 [16
 
 ]
-Overfull \vbox (0.74586pt too high) detected at line 282
- []
-
-
 Overfull \hbox (127.68054pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -1179,41 +1175,165 @@ Overfull \hbox (127.68054pt too wide) has occurred while \output is active
 
 [19
 
-] <Pi_30K1.jpg, id=252, 501.875pt x 501.875pt>
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[20
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[21
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[22
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[23
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[24
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[25
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[26
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[27
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[28
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[29
+
+]
+Overfull \vbox (0.74586pt too high) detected at line 294
+ []
+
+
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[30
+
+]
+Overfull \vbox (0.74586pt too high) detected at line 294
+ []
+
+
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[31
+
+]
+Overfull \vbox (0.74586pt too high) detected at line 294
+ []
+
+
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[32
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[33
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[34
+
+]
+Overfull \hbox (127.68054pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[35
+
+] <Pi_30K1.jpg, id=386, 501.875pt x 501.875pt>
 File: Pi_30K1.jpg Graphic file (type jpg)
  <use Pi_30K1.jpg>
-Package pdftex.def Info: Pi_30K1.jpg used on input line 327.
+Package pdftex.def Info: Pi_30K1.jpg used on input line 340.
 (pdftex.def)             Requested size: 85.35826pt x 85.3559pt.
 
-<Pi_30K2.jpg, id=253, 501.875pt x 501.875pt>
+<Pi_30K2.jpg, id=387, 501.875pt x 501.875pt>
 File: Pi_30K2.jpg Graphic file (type jpg)
  <use Pi_30K2.jpg>
-Package pdftex.def Info: Pi_30K2.jpg used on input line 327.
+Package pdftex.def Info: Pi_30K2.jpg used on input line 340.
 (pdftex.def)             Requested size: 85.35826pt x 85.3559pt.
 
-<Pi_30K3.jpg, id=254, 501.875pt x 501.875pt>
+<Pi_30K3.jpg, id=388, 501.875pt x 501.875pt>
 File: Pi_30K3.jpg Graphic file (type jpg)
  <use Pi_30K3.jpg>
-Package pdftex.def Info: Pi_30K3.jpg used on input line 327.
+Package pdftex.def Info: Pi_30K3.jpg used on input line 340.
 (pdftex.def)             Requested size: 85.35826pt x 85.3559pt.
 
-<Pi_30K4.jpg, id=255, 501.875pt x 501.875pt>
+<Pi_30K4.jpg, id=389, 501.875pt x 501.875pt>
 File: Pi_30K4.jpg Graphic file (type jpg)
  <use Pi_30K4.jpg>
-Package pdftex.def Info: Pi_30K4.jpg used on input line 327.
+Package pdftex.def Info: Pi_30K4.jpg used on input line 340.
 (pdftex.def)             Requested size: 85.35826pt x 85.3559pt.
 
-<Pi_30K5.jpg, id=256, 501.875pt x 501.875pt>
+<Pi_30K5.jpg, id=390, 501.875pt x 501.875pt>
 File: Pi_30K5.jpg Graphic file (type jpg)
  <use Pi_30K5.jpg>
-Package pdftex.def Info: Pi_30K5.jpg used on input line 327.
+Package pdftex.def Info: Pi_30K5.jpg used on input line 340.
 (pdftex.def)             Requested size: 85.35826pt x 85.3559pt.
 
 Overfull \hbox (127.68054pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
-[20
+[36
 
  <./Pi_30K1.jpg> <./Pi_30K2.jpg> <./Pi_30K3.jpg> <./Pi_30K4.jpg> <./Pi_30K5.jpg
 >]
@@ -1221,7 +1341,7 @@ Overfull \hbox (127.68054pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
-[21
+[37
 
 ]
 \tf@nav=\write6
@@ -1233,28 +1353,31 @@ Overfull \hbox (127.68054pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `beamer_template.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
  (./beamer_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 348.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
 Package rerunfilecheck Info: File `beamer_template.out' has not changed.
-(rerunfilecheck)             Checksum: 24A7DB5683D8308D0B82177A74B15CB1;569.
+(rerunfilecheck)             Checksum: 573BE35DA5D21C9E8721FF1377F850BD;569.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 335.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 348.
  ) 
 Here is how much of TeX's memory you used:
- 20511 strings out of 493117
- 407471 string characters out of 6135434
- 504740 words of memory out of 5000000
- 23426 multiletter control sequences out of 15000+600000
+ 20814 strings out of 493117
+ 413874 string characters out of 6135434
+ 524319 words of memory out of 5000000
+ 23697 multiletter control sequences out of 15000+600000
  17192 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,17n,68p,414b,1286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,17n,69p,414b,1303s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
@@ -1267,10 +1390,10 @@ r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></us
 r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr
 /local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on beamer_template.pdf (21 pages, 3475134 bytes).
+Output written on beamer_template.pdf (37 pages, 3516048 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

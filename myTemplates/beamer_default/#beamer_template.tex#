@@ -47,7 +47,6 @@
   \item Office hour: Friday 4:00-5:00 pm
   \item Email: ouyangzhibo@cuhk.edu.hk
   \item Language: English, Mandarin \& \textit{very little} Cantonese
-  \item You can find the tutorial materials in Piazza.
 \end{itemize}
 
 \end{frame}
@@ -67,13 +66,13 @@
     \end{equation}
     \uncover<2->{Simple cases:}
     \begin{eqnarray*}
-    	\uncover<2->{\uncover<2-7>{n=0:  & (x+y)^0=}1\\}
-    	\uncover<3->{\uncover<2-7>{n=1:  & (x+y)^1=}x+y\\}
-    	\uncover<4->{\uncover<2-7>{n=2:  & (x+y)^2=}x^2+2xy+y^2\\}
-    	\uncover<5->{\uncover<2-7>{n=3:  & (x+y)^3=}x^3+3x^2y+3xy^2+y^3\\}
-    	\uncover<6->{\uncover<2-7>{n=4:  & (x+y)^4=}x^4+4x^3y+6x^2y^2+4xy^3+y^4\\}
+    	\uncover<2->{n=0:  & (x+y)^0=1\\}
+    	\uncover<3->{n=1:  & (x+y)^1=x+y\\}
+    	\uncover<4->{n=2:  & (x+y)^2=x^2+2xy+y^2\\}
+    	\uncover<5->{n=3:  & (x+y)^3=x^3+3x^2y+3xy^2+y^3\\}
+    	\uncover<6->{n=4:  & (x+y)^4=x^4+4x^3y+6x^2y^2+4xy^3+y^4\\}
     \end{eqnarray*}
-    \uncover<7-8>{For a large $n$, expanding (\ref{eq: binomial}) by hand is too tedious. Fortunately, Binomial Theorem gives us the expansion (\ref{eq: binomial}) for any nonnegative integer.}
+    \uncover<7->{For a large $n$, expanding (\ref{eq: binomial}) by hand is too tedious. Fortunately, Binomial Theorem gives us the expansion (\ref{eq: binomial}) for any nonnegative integer.}
 \end{frame}
 
 \subsection{Formulation}
@@ -102,9 +101,9 @@
 \subsection{Combinatorial Proof}
 \begin{frame}{$(x+y)^3=1(x+y)(x+y)(x+y)$}
     How to expand it?\\
-    \uncover<2->{- use sequential model\\}
-    \uncover<4->{- analogy to tossing a fair coin 3 times}
-    \uncover<2->{\begin{tikzpicture}[grow=right, sloped]
+    - use sequential model\\
+    - analogy to tossing a fair coin 3 times
+    \begin{tikzpicture}[grow=right, sloped]
 	\node[bag] {1}
     	child {
         	node[bag] {$y$}        
@@ -198,9 +197,9 @@
     	node[above] {x}
         node[below]  {}
     	};
-    \end{tikzpicture}\\}
-    \uncover<3->{\textbf{Remarks}: Order does not matter, namely, $xxy,xyx,yxx$ are the same. 
-    Summing up the leaf nodes, we get $(x+y)^3=x^3+3x^2y+3xy^2+y^3$}
+    \end{tikzpicture}\\
+    \textbf{Remark}: Order does not matter, namely, $xxy,xyx,yxx$ are the same. 
+    Summing up the leaf nodes, we get $(x+y)^3=x^3+3x^2y+3xy^2+y^3$
 \end{frame}
 
 \begin{frame}{Combinatorial proof}
@@ -210,10 +209,9 @@ $$(x+y)^n=\underbrace{(x+y)(x+y)\cdots(x+y)}_{\text{n of those}}=\sum_{k=0}^nC_n
 \item The expansion is the same with the total sample space of tossing a fair coin $n$ times, $n \ge 1$.
 \item Let $x,y$ denote the events "we get a head in one tossing" and "we get a tail in one tossing", respectively. The coefficient $a_k$ in each item equals $C_n^k$ (analogous to the event "in $n$ tossings, we get $k$ heads").
 \end{itemize}
-\uncover<2->{
 \begin{block}{Remarks}
 Actually, $n$ does not have to be a nonnegative integer; the binomial theorem can be extended to the power of any real number. 
-\end{block}}
+\end{block}
 \end{frame}
 
 \subsection{Applications}
@@ -222,22 +220,17 @@ The Euler's number $e$ is defined as
 \begin{displaymath}
 e=\lim_{n\to\infty}\bigg(1+\frac{1}{n}\bigg)^n
 \end{displaymath}
-\uncover<2->{
 Applying binomial theorem:
-$$\bigg(1+\frac{1}{n}\bigg)^n=1+C_n^1\frac{1}{n}+C_n^2\frac{1}{n^2}+\cdots+C_n^n\frac{1}{n^n}$$}
-\uncover<3->{
+$$\bigg(1+\frac{1}{n}\bigg)^n=1+C_n^1\frac{1}{n}+C_n^2\frac{1}{n^2}+\cdots+C_n^n\frac{1}{n^n}$$
 Looking into the $k$th item of the right hand side and take the limit:
-$$\lim_{n\to\infty}C_n^k\frac{1}{n^k}=\lim_{n\to\infty}\frac{1}{k!}\cdot\frac{n(n-1)(n-2)\cdots(n-k+1)}{n^k}=\frac{1}{k!}$$}
-\uncover<4->{
+$$\lim_{n\to\infty}C_n^k\frac{1}{n^k}=\lim_{n\to\infty}\frac{1}{k!}\cdot\frac{n(n-1)(n-2)\cdots(n-k+1)}{n^k}=\frac{1}{k!}$$
 Therefore, $e$ can be written as a series:
-$$e=\frac{1}{0!}+\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+\cdots$$}
-\uncover<5->{
-Above is also known as Taylor series of $e^x$ at $x=1$.}
+$$e=\frac{1}{0!}+\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+\cdots$$
+Above is also known as Taylor series of $e^x$ at $x=1$.
 \end{frame}
 
 \begin{frame}{Simple Numerical Estimation}
 \textbf{Example 1}  \textit{Estimate the value of $1.01^5$ rounding up to 3 decimal places.}\\
-\uncover<2->{
 \textbf{Solution}:  Using the binomial theorem: let $x=1,y=0.01$,
 \begin{displaymath}
 \begin{split}
@@ -245,11 +238,9 @@ Above is also known as Taylor series of $e^x$ at $x=1$.}
 & = 1+5(0.01)+10(0.01)^2+10(0.01)^3+5(0.01)^4+(0.01)^5\\
 & \approx 1+5(0.01)+10(0.01)^2 = 1.051
 \end{split}
-\end{displaymath}}
+\end{displaymath}
 
-\uncover<3->{
-\textbf{Example 2}  \textit{Estimate the value of $1.0309^6$ rounding up to 3 decimal places.}\\}
-\uncover<4->{
+\textbf{Example 2}  \textit{Estimate the value of $1.0309^6$ rounding up to 3 decimal places.}\\
 \textbf{Solution}:  Again, calculate this by hand will take us some time. But using the binomial theorem, we can try to expand the following
 \begin{displaymath}
 \begin{split}
@@ -258,7 +249,7 @@ Above is also known as Taylor series of $e^x$ at $x=1$.}
 & = 1+6x+21x^2+50x^3+\cdots
 \end{split}
 \end{displaymath}
-Let $x=0.03$, we get $1.0309^6\approx1.200$.}
+Let $x=0.03$, we get $1.0309^6\approx1.200$.
 \end{frame}
 
 \section{Integer Solutions to Indeterminate Equation}
@@ -271,78 +262,37 @@ Suppose we have a equation as follows
 $$x_1+x_2+x_3+\cdots+x_n=m$$
 where $x_i,n,m$ are positive integers, and $\forall i \in \{1,2,3,4,\cdots,n\}$. Then, how many solutions are there? (hint: use combinations.)
 \end{block}
-\uncover<2->{
 \begin{block}{Solution}
 Consider $m$ to be $m$ "1"s summing up together, i.e.,
 $$m=\underbrace{1+1+1+\cdots+1}_{\text{m ones}}$$
 Every solution of ${x_1,x_2,\cdots,x_n}$ can be matched to an event of selecting $n-1$ "+" between those "1"s.
-\end{block}}
+\end{block}
 
+% Commands to include a figure:
+%\begin{figure}
+%\includegraphics[width=\textwidth]{your-figure's-file-name}
+%\caption{\label{fig:your-figure}Caption goes here.}
+%\end{figure}
 \end{frame}
 
-\begin{frame}{Integer Solutions to Indeterminate Equation(cont'd)}
+\begin{frame}{Integer Solutions to Indeterminate Equation}
 Because of the one-to-one matching, the number of solutions is equal to the frequency of the event "picking $n-1$ from $m-1$", that is $C_{m-1}^{n-1}$
 
-\uncover<2->{
 \begin{block}{Problem 2}
 What if $x_i$ are nonnegative, how many solutions are there? (hint: convert back into the previous problem)
-\end{block}}
-\uncover<3->{
+\end{block}
 \begin{block}{Solution}
 Since $x_i$ can be zero, so for each item we can add 1 to $x_i$. In this way, we can make it positive again. Note that whenever we add 1 in $x_i$, we should also add 1 to the right hand side. Let $x'_i=x_i+1$ which is a positive integer, so the problem is equivalent to $$x'_1+x'_2+x'_3+\cdots+x'_n=m+n$$. So the number of solution is $C_{m+n-1}^{n-1}$
-\end{block}}
-\end{frame}
-
-%back-up slides
-\section{Monte Carlo Simulation}
-\subsection{Brief Introduction}
-
-\begin{frame}{Monte Carlo Simulation}
-\begin{block}{Definition}
-Monte Carlo simulation is a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results.
 \end{block}
-\textbf{Remarks}:
-\begin{itemize}
-\item Monte Carlo simulation is useful when it is difficult or impossible to obtain a closed-form expression, or infeasible to apply a deterministic algorithm.
-\item Monte Carlo simulation is based on \textit{Law of Large Numbers}:
-$$\lim_{n\to \infty}S_n=\lim_{n\to \infty}\frac{X_1+X_2+\cdots+X_n}{n}=E(X)$$
-where $X_1,X_2,\cdots$ are a sequence of independent identically random variables. Namely, we repeatedly run a experiment for a sufficiently large number of times, the result will finally converge to its expectation (probability), e.g., coin toss.
-\end{itemize}
-\end{frame}
-
-\subsection{Examples}
-
-\begin{frame}{Monte Carlo Simulation(cont'd)}
-\begin{block}{Example: extimate $\pi$}
-%\textbf{Example: extimate $\pi$} \\
-Consider a circle inscribed in a unit square. Given that the circle and the square have a ratio of areas that is $\pi/4$, how can we approximate the value of $\pi$?
-\end{block}
-\uncover<2->{
-\textbf{Solution}:  Using a Monte Carlo simulation:
-\begin{itemize}
-\item Draw a square and inscribe a circle within it.
-\item \textit{Uniformly} scatter some objects of uniform size (grains of rice or sand) over the square.
-\item Count the number of objects inside the circle and the total number of objects.
-\item The ratio of the two counts is an estimate of the ratio of the two areas, which is $\pi/4$. Multiply the result by $4$ to estimate $\pi$
-\end{itemize}}
-\end{frame}
-
-\begin{frame}{Monte Carlo Simulation(illustration)}
-% Commands to include a figure:
-\begin{figure}
-\includegraphics[width=3cm]{Pi_30K1}
-\includegraphics[width=3cm]{Pi_30K2}
-\includegraphics[width=3cm]{Pi_30K3}\\
-\includegraphics[width=3cm]{Pi_30K4}
-\includegraphics[width=3cm]{Pi_30K5}
-\caption{\label{fig:your-figure}Estimate $\pi$ using Monte Carlo simulation.}
-\end{figure}
 \end{frame}
 
 \begin{frame}
 \begin{center}
 \huge Thank you!
 \end{center}
+\end{frame}
+\begin{frame}
+  
 \end{frame}
 
 \end{document}
