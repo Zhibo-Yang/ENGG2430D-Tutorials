@@ -1,0 +1,206 @@
+\documentclass{IEEEconf}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,enumerate,latexsym}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\nocomma}{}
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+\newcommand{\tmtextbf}[1]{{\bfseries{#1}}}
+\newcommand{\tmtextit}[1]{{\itshape{#1}}}
+\newenvironment{enumeratenumeric}{\begin{enumerate}[1.] }{\end{enumerate}}
+\newenvironment{proof}{\noindent\textbf{Proof\ }}{\hspace*{\fill}$\Box$\medskip}
+\newtheorem{lemma}{Lemma}
+%%%%%%%%%% End TeXmacs macros
+\onecolumn
+\begin{document}
+
+\title{ENGG2430D Tutorial 10}
+
+\author{Zhibo Yang}
+
+\date{April 7, 2015}
+
+\maketitle
+
+\section{Introduction}
+
+In this tutorial, we will discuss over a classical application of probability
+thoery, \tmtextit{(probabilistic) random graph}. Basically, this will involve
+conditinal probability, expectation of random variables, properties of
+binomial random variable and Poisson random variable, etc.
+
+The material is organized as follows: first I will introduce to you some basic
+notation of graphs in section 1; then the setting of random graph is specified
+in section 2, also we will derive some interesting properties of random graph
+using what you have learned in the class.
+
+\section{Basic Notation of Graph}
+
+A graph basically consists of two major components, \tmtextit{vertices
+(nodes)} and \tmtextit{edges}, which are denoted by $V$ and $E$ in the
+following. A graph can be catogorized as \tmtextit{directed} and
+\tmtextit{unditected} depending on whether the edges, represented by pairs of
+vertices, have direction or not. But note that in our settings, the edges have
+no direction. For instance, if $V = \{ 1, 2 \nocomma, 3, 4 \}$ and $E = \{ (1,
+2), (1, 4), (2, 3), (3, 3) \}$, we represent this graph as follows in Figure
+1. As is shown, there can be multiple edges between two vertices (1 and 2),
+and loops (from node 3 to itself) in the graph.
+
+We say a graph is \tmtextit{connected} if there is a path between any pair of
+vertices in the graph. Mathematically speaking, the graph $G = < V, E >$ is
+connected iff for any two nodes $i, j \in V$, there exists a sequence of
+nodes, $i, i_1, i_2, \ldots, i_k, j$ such that $(i, i_1), (i_1, i_2), \ldots,
+(i_k, j) \in E$.
+
+\section{Random Graph}
+
+Now consider the following graph $G = < V, E >$ where $V = \{ 1, 2, \ldots, n
+\}$ and $E = \{ (i, X (i)), i = 1, 2, \ldots, n \}$. The $X (i)$ are
+\tmtextit{independent} random variables such that
+\[ P \{ X (i) = j \} = \frac{1}{n}, \text{ \ \ \ \ } j = 1, 2, \ldots, n \]
+That is, each vertex in the graph $G$ is randomly connected to one of the
+vertices (including itself) with equal probabilities. We refer graph $G$ as
+\tmtextit{random graph}.
+
+In this tutorial, we focus on deriving the \tmtextit{probability that the
+random graph $G$ described above is connected}, denoted as $P \left\{ G \text{
+is connected} \right\}$.
+
+For better derivation, let us assume without loss of generality that the graph
+starts at vertex 1, thus follows the sequence of vertices, $1, X (1), X^2 (1),
+\ldots, X^n (1)$, where $X^n (1) = X^{n - 1} (1)$; and define a random
+variable $N$ which represents the first $k$ such that $X^k (1)$ is not a new
+node, i.e.,
+\[ N = 1 \tmop{st} \text{ } k \text{ such that } X^k (1) \in \{ 1, X (1), X^2
+   (1), \ldots, X^{k - 1} (1) \} \]
+This means starting from vertex 1, the vertex $k$ goes back to one of the
+vertices previouly visited, see Figure 2 for illustration.
+
+Therefore, using conditional probability, we can rewrite $P \left\{ G \text{
+is connected} \right\}$ as follows,
+\begin{equation}
+  P \left\{ G \text{ is connected} \right\} = {%\bfseries
+  \overset{n}{\underset{k = 1}{\sum}}} P \left\{ G \text{ is connected} |N = k
+  \right\} P \{ N = k \} \label{decomp}
+\end{equation}
+Looks like we are making our life worse because we now have two items to
+calculate? No, not if we can proof the following lemma.
+
+\begin{lemma}
+  Given a random graph $G = < V, E >$ where $V = \{ 0, 1, 2, \ldots, m \}$ $(|
+  V | = m + 1)$ and $E = \{ (i, Y (i)), i = 1, 2, \ldots, m \}$, where
+  \[ Y_i = \left\{ \begin{array}{l}
+       j \text{ \ \ \ } \tmop{with} \tmop{probability} \frac{1}{m + k}, \text{
+       } j = 1, \ldots, m\\
+       0 \text{ \ \ \ } \tmop{with} \tmop{probability} \frac{k}{m + k}
+     \end{array} \right. \]
+  where k is a positive constant, then we have
+  \[ P \left\{ G \text{ is connected} \right\} = \frac{k}{m + k} \]
+\end{lemma}
+
+\begin{proof}
+  (\tmtextbf{Induction}) As is can be shown that the above lemma holds true
+  when $m = 1$ for all $k$. Now we assume lemma 1 also holds true for all
+  values less than $r$ for all $k$, i.e., $m < r$, in the following we prove
+  lemma 1 also holds true for $m = r$ for all $k$.
+  
+  Let us first condition on the number of edges $(i, Y_i (i))$ where $Y_i (i)
+  = 0$ which is denoted by $Z$. then we have
+  \begin{equation}
+    P \left\{ G \text{ is connected} \right\} = {%\bfseries
+    \overset{r}{\underset{z = 0}{\sum}}} P \left\{ G \text{ is connected} |Z =
+    z \right\} \left( \begin{array}{c}
+      r\\
+      z
+    \end{array} \right) \left( \frac{k}{r + k} \right)^z \left( \frac{r}{r +
+    k} \right)^{r - z} \label{prf1}
+  \end{equation}
+  since $Z$ is actually a binomial random variable with parameter $\left( r,
+  \frac{k}{r + k} \right)$.
+  
+  In the above setting, given $Z = z$, we consider the set $\{ (i, Y_i (i))
+  |Y_i (i) = 0 \}$ as one \tmtextit{supernode}. Thus we have a new graph $G' =
+  < V', E' >$ with $V' = \{ 0, 1, 2, \ldots, m' \}$ and $E = \{ (i, Y (i)), i
+  = 1, 2, \ldots, m' \}$, where
+  \[ Y_i = \left\{ \begin{array}{l}
+       j \text{ \ \ \ } \tmop{with} \tmop{probability} \frac{1}{m' + z},
+       \text{ } j = 1, \ldots, m'\\
+       0 \text{ \ \ \ } \tmop{with} \tmop{probability} \frac{z}{m' + z}
+     \end{array} \right. \]
+  and $m' = r - z < r$. Since $m' < r$, so by our hypothesis the probability
+  that $G'$ is connected is $\frac{z}{r}$. Therefore, we have
+  \[ P \left\{ G \text{ is connected} |Z = z \right\} = \frac{z}{r} \]
+  and by $\left( \ref{prf1} \right)$ we have
+  \[ P \left\{ G \text{ is connected} \right\} = {%\bfseries
+     \overset{r}{\underset{z = 0}{\sum}}} \frac{z}{r} \left( \begin{array}{c}
+       r\\
+       z
+     \end{array} \right) \left( \frac{k}{r + k} \right)^z \left( \frac{r}{r +
+     k} \right)^{r - z} = \frac{1}{r} E (Z) = \frac{k}{r + k} \]
+  This completes the proof.
+\end{proof}
+
+Go back to our problem $\left( \ref{decomp} \right)$, by applying lemma 1, we
+have
+\begin{equation}
+  P \left\{ G \text{ is connected} |N = k \right\} = \frac{k}{n} \label{cond1}
+\end{equation}
+because we can regard there $k$ nodes $1, X (1), X^2 (1), \ldots, X^{k - 1}
+(1)$ as one \tmtextit{supernode}, within which the nodes are connected to each
+other; and no edges is emanated from these nodes. The situation is the same as
+if we have $n - k + 1$ nodes, one supernode and $n - k$ ordinary nodes. And
+each ordinary node is connected to the supernode with probability equals to
+$\frac{k}{n}$ and all ordinary nodes with probability equals to $\frac{1}{n}$.
+This is exactly what described in lemma 1.
+
+With $\left( \ref{decomp} \right)$ and $\left( \ref{cond1} \right)$, we can
+derive that
+\begin{equation}
+  P \left\{ G \text{ is connected} \right\} = {%\bfseries
+  \overset{r}{\underset{z = 0}{\sum}}} \frac{k}{n} P \{ N = k \} = \frac{E
+  (N)}{n} \label{expn1}
+\end{equation}
+To compute $E (N)$, we define the indicator variable $I_i$ $(i \geqslant 1)$
+such that
+\[ I_i = \left\{ \begin{array}{l}
+     1, \text{ \ \ \ if} i \leqslant N\\
+     0, \text{ \ \ \ if} i > N
+   \end{array} \right. \]
+Hence,
+\[ N = \overset{\infty}{\underset{i = 1}{\sum}} I_i \]
+Therefore, we have
+\begin{equation}
+  E (N) = E \left( \overset{\infty}{\underset{i = 1}{\sum}} I_i \right) =
+  \overset{\infty}{\underset{i = 1}{\sum}} E (I_i) =
+  \overset{\infty}{\underset{i = 1}{\sum}} P \{ N \geqslant i \} \label{expn2}
+\end{equation}
+The event that $N \geqslant i$ means the nodes $1, X (1), X^2 (1), \ldots,
+X^{i - 1} (1)$ are all different (no repetition in these nodes), which follows
+that
+\[ P \{ N \geqslant i \} = \frac{(n - 1)}{n} \frac{(n - 2)}{n} \cdots \frac{(n
+   - i + 1)}{n} = \frac{(n - 1) !}{(n - i) ! n^{i - 1}} \]
+and so, from $\left( \ref{expn1} \right)$ and $\left( \ref{expn2} \right)$, we
+finally get
+\[ P \left\{ G \text{ is connected} \right\} = (n - 1) !
+   \overset{n}{\underset{i = 1}{\sum}} \frac{1}{(n - i) ! n^i} = \frac{(n - 1)
+   !}{n^n}  \overset{n - 1}{\underset{j = 0}{\sum}} \frac{n^j}{j!} \]
+the second equality follows from letting $j = n - i$ and $0 \leqslant j
+\leqslant n - 1$ since $1 \leqslant i \leqslant N \leqslant n$.
+
+\
+
+\paragraph{PS:}There are some other variations of random graph, and a lot
+more properties can be further explored, please refer to [1] and [2] for
+details.
+
+\section{Reference}
+
+\begin{enumeratenumeric}
+  \item ERDdS, P., and A. R\&WI. ``On random graphs I."~\tmtextit{Publ. Math.
+  Debrecen}~6 (1959): 290-297.
+  
+  \item \label{dynamic_citation}Gilbert, E. N. Random Graphs. Ann. Math.
+  Statist. 30 (1959), no. 4, 1141--1144.
+\end{enumeratenumeric}
+
+\end{document}

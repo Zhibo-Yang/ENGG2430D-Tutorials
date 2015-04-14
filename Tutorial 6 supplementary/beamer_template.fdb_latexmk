@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1426038734 "beamer_template.tex" "beamer_template.pdf" "beamer_template" 1426038736
+["pdflatex"] 1426039213 "beamer_template.tex" "beamer_template.pdf" "beamer_template" 1426039215
   "/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/babel-english/english.ldf" 1367878877 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
   "/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def" 1395780385 49536 e1475dd245ff2196764ba5b91ac63714 ""
@@ -162,15 +162,17 @@
   "/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/utf8x.def" 1368571634 8036 21f7ac37aafb6cfeddbb196b8bfd6280 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
-  "beamer_template.aux" 1426038736 5127 a3414cb603b51348728a5029b9a99145 ""
-  "beamer_template.nav" 1426038736 2702 162f2e3f6f0d11c750c9d7d1669fcc6a ""
-  "beamer_template.out" 1426038736 701 447ac3f3c59f58ac2af7a68511d5a422 ""
-  "beamer_template.tex" 1426038731 7312 287ab10a3f5983cfdadd9a698c876fac ""
-  "beamer_template.toc" 1426038736 714 92a75070c10122e49c7ae422aa20c039 ""
+  "beamer_template.aux" 1426039215 6943 edfbf53dd0538064665827f8edb72a5f ""
+  "beamer_template.nav" 1426039215 3924 f9a4899699740cd50a43cef634968065 ""
+  "beamer_template.out" 1426039215 679 79730decc1aac72745e6d2dbc6589e1e ""
+  "beamer_template.tex" 1426039212 14505 6a6208218daad6fe2384f9ebecf1d2d9 ""
+  "beamer_template.toc" 1426039215 676 2065c4047e45fe7569175af0911d0bfd ""
+  "fig1.png" 1425370218 28866 9d1cb05d30f37e25b09ea60587bd0271 ""
+  "fig2.png" 1425392834 82064 47ca8d51b86ce5bce50abe5603ece5d9 ""
   (generated)
-  "beamer_template.aux"
-  "beamer_template.out"
-  "beamer_template.log"
   "beamer_template.toc"
   "beamer_template.nav"
   "beamer_template.pdf"
+  "beamer_template.out"
+  "beamer_template.log"
+  "beamer_template.aux"
