@@ -1,171 +1,37 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Engg2430d-tutorials by Zhibo-Yang</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Engg2430d-tutorials</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/Zhibo-Yang/ENGG2430D-Tutorials" class="btn">View on GitHub</a>
+      <a href="https://github.com/Zhibo-Yang/ENGG2430D-Tutorials/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Zhibo-Yang/ENGG2430D-Tutorials/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <h1>Engg2430d-tutorials</h1>
-        <p></p>
-      </header>
+    <section class="main-content">
+      <h1>
+<a id="engg2430d-tutorials" class="anchor" href="#engg2430d-tutorials" aria-hidden="true"><span class="octicon octicon-link"></span></a>ENGG2430D-Tutorials</h1>
 
-      <div id="banner">
-        <span id="logo"></span>
+<p>This is for the tutorial of class ENGG2430D "probability and statistics for engineering student" in the Chinese University of Hong Kong.</p>
 
-        <a href="https://github.com/Zhibo-Yang/ENGG2430D-Tutorials" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/Zhibo-Yang/ENGG2430D-Tutorials/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/Zhibo-Yang/ENGG2430D-Tutorials/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Zhibo-Yang/ENGG2430D-Tutorials">Engg2430d-tutorials</a> is maintained by <a href="https://github.com/Zhibo-Yang">Zhibo-Yang</a>.</span>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
-<a id="cuhk-cqrc-a-large-scale-color-qr-code-dataset" class="anchor" href="#cuhk-cqrc-a-large-scale-color-qr-code-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>CUHK-CQRC: A Large-Scale Color QR Code Dataset</h1>
-
-<p align="center">MobiTec</p>
-
-<p align="center">The Chinese Univeristy of Hong Kong</p>
-
-<h2>
-<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
-
-<hr>
-
-<p><img src="cqrc-fluo.pdf%20=115x" alt=""><img src="cqrc-incand.pdf%20=115x" alt=""><img src="cqrc-indoor.pdf%20=115x" alt=""><img src="cqrc-outdoor.pdf%20=115x" alt=""><img src="cqrc-shadow.pdf%20=115x" alt=""></p>
-
-<p><strong>Figure 1</strong>: Each column presents 2 samples taken under 5 lighting conditions, "fluorescent", "incandescent", "indoor", "outdoor", "shadow".</p>
-
-<h2>
-<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
-
-<p>CUHK-CQRC is a challenging color QR code dataset which consists of 1,506 photos and 3,884 camera previews (video frames) of high-density 3-layer color QR codes captured by different phone models under different lighting conditions. Fig. 1 presents some samples of CUHK-CQRC.</p>
-
-<p>We implement the color QR code generator based on an open-source barcode processing library, ZXing, and we also deploy the HiQ generator on-line at <a href="https://authpaper.net/">https://authpaper.net/</a>. For fair comparison between HiQ-C and PCCC in which the color QR code is inherently 3-layer, so we generate 5 high-capacity 3-layer color QR codes with different data capacities (excluding redundancies from error correction mechanism) which are 2787 bytes, 3819 bytes, 5196 bytes, 6909 bytes and 8859 bytes (maximum for a 3-layer color QR code). In order to test the limit of each approach, all color QR codes are embedded with <em>low</em> level of error correction in each layer. By using a common color printer (Ricoh Aficio MP C5501A), we print each generated color QR code on ordinary white paper substrate in different printout sizes, $$$30\times 30,mm^2$$$, $40\times 40,mm^2$, $50\times 50,mm^2$ and $60\times 60,mm^2$ (for simplicity, we use the length of one side of the square to represent the printout size), and two different printout resolutions, <em>600dpi</em> and <em>1200dpi</em>. To simulate the normal scanning scenario, the samples are captured by different users under several typical lighting conditions: indoor, outdoor (under different types of weather and time duration of a day), fluorescent, incandescent, and shadowed (both uniform and nonuniform cases are considered). Moreover, we capture the images using eight types of popular smartphones which are listed in the Table 1.</p>
-
-<p><strong>Table 1:</strong> TYPES OF SMARTPHONES USED IN COLLECTING DATABASE</p>
-
-<table>
-<thead>
-<tr>
-<th align="center">ID</th>
-<th align="center">Model Name</th>
-<th align="center">Megapixels (MP)</th>
-<th align="center">Image Stabilization</th>
-<th align="center">Autofocus</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">1</td>
-<td align="center">iPhone 6 Plus</td>
-<td align="center">8.0</td>
-<td align="center">yes</td>
-<td align="center">yes</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">iPhone 6</td>
-<td align="center">8.0</td>
-<td align="center">no</td>
-<td align="center">yes</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">Nexus 5</td>
-<td align="center">8.0</td>
-<td align="center">yes</td>
-<td align="center">yes</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">Nexus 4</td>
-<td align="center">8.0</td>
-<td align="center">no</td>
-<td align="center">yes</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">Meizu MX2</td>
-<td align="center">8.0</td>
-<td align="center">no</td>
-<td align="center">yes</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">Oneplus 1</td>
-<td align="center">13.0</td>
-<td align="center">no</td>
-<td align="center">yes</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">Galaxy Nexus 3</td>
-<td align="center">8.0</td>
-<td align="center">no</td>
-<td align="center">yes</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="center">Sony Xperia M2</td>
-<td align="center">8.0</td>
-<td align="center">no</td>
-<td align="center">yes</td>
-</tr>
-</tbody>
-</table>
-
-<h2>
-<a id="news" class="anchor" href="#news" aria-hidden="true"><span class="octicon octicon-link"></span></a>News</h2>
-
-<ul>
-<li>
-<strong>2015-10-15</strong> </li>
-<li>
-<strong>2015-10-14</strong> First release of CUHC-CQRC. Currently, CUHK_CQRC only contains 3-layer color QR code, dataset containing 2-, 4- and 5- layer color QR codes and supplementing tools will be release soon.</li>
-</ul>
-
-<h2>
-<a id="note" class="anchor" href="#note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note</h2>
-
-<ol>
-<li>The CompCars database is available for non-commercial research purposes only.</li>
-<li>You agree not to reproduce, duplicate, copy, sell, trade, resell or exploit for any commercial purposes, any portion of the images and any portion of derived data.</li>
-<li>You agree not to further copy, publish or distribute any portion of the CUHK-CQRC dataset. Except, for internal use at a single site within the same organization it is allowed to make copies of the database.</li>
-<li>The MobiTec@CUHK reserves the right to terminate your access to the database at any time.</li>
-</ol>
-
-<h2>
-<a id="download-instruction" class="anchor" href="#download-instruction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download Instruction</h2>
-
-<p>Currently, CUHK-CQRC is not fully released online (coming soon). If you urgently need it, please contact Mr. Zhibo Yang (yz014(at)ie.cuhk.edu.hk) or Mr. Chak Man Li(solon(at)ie.cuhk.edu.hk) to ask for the access to the dataset.
-</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/Zhibo-Yang">Zhibo-Yang</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+    </section>
+
+  
   </body>
 </html>
